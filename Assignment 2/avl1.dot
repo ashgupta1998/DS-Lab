@@ -1,0 +1,30 @@
+digraph AVL {
+    node [fontname=Arial , shape = record];
+60 [label = "<left> | <mid> 60 | bf: -1 | <right> "];
+35 [label = "<left> | <mid> 35 | bf: 1 | <right> "];
+"60":left -> "35":mid ;
+20 [label = "<left> | <mid> 20 | bf: -1 | <right> "];
+"35":left -> "20":mid ;
+25 [label = "<left> |<mid> 25 | bf: 0 | <right> "];
+ "20":right -> "25": mid;
+59 [label = "<left> |<mid> 59 | bf: 0 | <right> "];
+ "35":right -> "59": mid;
+90 [label = "<left> |<mid> 90 | bf: 1 | <right> "];
+ "60":right -> "90": mid;
+75 [label = "<left> | <mid> 75 | bf: -1 | <right> "];
+"90":left -> "75":mid ;
+70 [label = "<left> | <mid> 70 | bf: 0 | <right> "];
+"75":left -> "70":mid ;
+85 [label = "<left> |<mid> 85 | bf: 0 | <right> "];
+ "75":right -> "85": mid;
+80 [label = "<left> | <mid> 80 | bf: 0 | <right> "];
+"85":left -> "80":mid ;
+89 [label = "<left> |<mid> 89 | bf: 0 | <right> "];
+ "85":right -> "89": mid;
+100 [label = "<left> |<mid> 100 | bf: 0 | <right> "];
+ "90":right -> "100": mid;
+95 [label = "<left> | <mid> 95 | bf: 0 | <right> "];
+"100":left -> "95":mid ;
+120 [label = "<left> |<mid> 120 | bf: 0 | <right> "];
+ "100":right -> "120": mid;
+}
